@@ -19,33 +19,42 @@
       <header class="display-flex">
         <img src="./images/freddie.png" class="logo" alt="logo image" />
         <h1 id="title">We are the Champions</h1>
-        <div class="text">
-            <textarea id="endors-text" placeholder="Write your endorsement here"></textarea>
-        </div>
-        <div class="buttons">
-            <input type="text" placeholder="From" class="from-to" id="from-input">
-            <input type="text" placeholder="To" id="to-input" class="from-to">
-        </div>
-        <button id="publish-btn">Publish</button>
+       
         
       </header>
       <main id="endors-msg-section" class="display-flex">
+        <div class="text">
+          <textarea id="endors-text" placeholder="Write your endorsement here"></textarea>
+      </div>
+      <div class="buttons">
+          <input type="text" placeholder="From" class="from-to" id="from-input">
+          <input type="text" placeholder="To" id="to-input" class="from-to">
+      </div>
+      <button id="publish-btn">Publish</button>
         <h2>- Endorsements -</h2>
-        <div class="message-container">
+        <div class="messages">
             <span id="from-text" class="bold-text">From, name </span>
             <p>Abdellah! That transcription feature you completed for Scrimba 3.0 is amazing. I know you’ve been working hard on it for several months now. 👏👏👏 Really good work 🙌
                 From Sindre</p>
                 <span id="To-text"  class="bold-text">To, name </span>
 
         </div>
-        <div class="message-container">
+        <div class="messages">
             <span id="from-text" class="bold-text">From, name </span>
             <p>Abdellah! That transcription feature you completed for Scrimba 3.0 is amazing. I know you’ve been working hard on it for several months now. 👏👏👏 Really good work 🙌
                 From Sindre</p>
+                <!-- Need to work on -->
                 <span id="To-text"  class="bold-text">To, name </span>
+                <span class="tweet-detail">
+                  <i class="fa-solid fa-heart ${likeIconClass}"
+                  data-like="${tweet.uuid}"
+                  ></i>
+                  ${tweet.likes}
+              </span>
+              <!-- !!!!!!!!!!!!!!! -->
 
         </div>
-        <div class="message-container">
+        <div class="messages">
             <span id="from-text" class="bold-text">From, name </span>
             <p>Abdellah! That transcription feature you completed for Scrimba 3.0 is amazing. I know you’ve been working hard on it for several months now. 👏👏👏 Really good work 🙌
                 From Sindre</p>
