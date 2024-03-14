@@ -9,8 +9,9 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans&family=Smythe&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./index.css" />
-    <script src="./index.js" defer></script>
+    <script src="./index.js" defer type="module"></script>
 
     <title>We Are Champions</title>
   </head>
@@ -32,35 +33,9 @@
       </div>
       <button id="publish-btn">Publish</button>
         <h2>- Endorsements -</h2>
-        <div class="messages">
-            <span id="from-text" class="bold-text">From, name </span>
-            <p>Abdellah! That transcription feature you completed for Scrimba 3.0 is amazing. I know you’ve been working hard on it for several months now. 👏👏👏 Really good work 🙌
-                From Sindre</p>
-                <span id="To-text"  class="bold-text">To, name </span>
-
-        </div>
-        <div class="messages">
-            <span id="from-text" class="bold-text">From, name </span>
-            <p>Abdellah! That transcription feature you completed for Scrimba 3.0 is amazing. I know you’ve been working hard on it for several months now. 👏👏👏 Really good work 🙌
-                From Sindre</p>
-                <!-- Need to work on -->
-                <span id="To-text"  class="bold-text">To, name </span>
-                <span class="tweet-detail">
-                  <i class="fa-solid fa-heart ${likeIconClass}"
-                  data-like="${tweet.uuid}"
-                  ></i>
-                  ${tweet.likes}
-              </span>
-              <!-- !!!!!!!!!!!!!!! -->
-
-        </div>
-        <div class="messages">
-            <span id="from-text" class="bold-text">From, name </span>
-            <p>Abdellah! That transcription feature you completed for Scrimba 3.0 is amazing. I know you’ve been working hard on it for several months now. 👏👏👏 Really good work 🙌
-                From Sindre</p>
-                <span id="To-text"  class="bold-text">To, name </span>
-
-        </div>
+        <div id="endorsments"></div>
+        <!-- <i class="fa-solid fa-heart "></i> -->
+        
 
       </main>
     </div>
